@@ -1,0 +1,147 @@
+/* styles.css */
+
+/* Global styles */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background-color: #f8f9fa;
+  margin: 0;
+  padding: 0;
+}
+
+/* Hero Section */
+.hero {
+  background: linear-gradient(
+      rgba(0, 0, 0, 0.55),
+      rgba(0, 0, 0, 0.55)
+    ),
+    url('assets/hero-bg.jpg') no-repeat center center/cover;
+  min-height: 60vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 3rem 1rem;
+}
+
+.hero h1 {
+  font-size: 2.75rem;
+  font-weight: 700;
+}
+
+.hero p {
+  font-size: 1.25rem;
+  margin-top: 1rem;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Sections */
+.section {
+  padding: 4rem 1rem;
+}
+
+.bg-light {
+  background-color: #f1f3f5 !important;
+}
+
+/* Founder’s Story Section */
+#founder-story img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+#founder-story p {
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+  color: #444;
+}
+
+/* Cards */
+.card {
+  border: none;
+  border-radius: 8px;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  background-color: #fff;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.12);
+}
+
+.card-title {
+  font-weight: 600;
+  font-size: 1.25rem;
+  margin-bottom: 0.75rem;
+}
+
+.card-text {
+  color: #555;
+  font-size: 1rem;
+}
+
+/* Buttons */
+.btn-primary {
+  background-color: #006d77;
+  border: none;
+  transition: background-color 0.3s ease;
+}
+
+.btn-primary:hover {
+  background-color: #004d55;
+  color: #fff;
+}
+
+.btn-secondary {
+  background-color: #83c5be;
+  border: none;
+  transition: background-color 0.3s ease;
+  color: #004d55;
+}
+
+.btn-secondary:hover {
+  background-color: #006d77;
+  color: #fff;
+}
+
+/* Navbar */
+.navbar {
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+.navbar-brand {
+  font-size: 1.5rem;
+  letter-spacing: 0.04em;
+}
+
+.nav-link {
+  font-weight: 500;
+  color: #004d55 !important;
+  transition: color 0.2s ease;
+}
+
+.nav-link:hover,
+.nav-link.active {
+  color: #006d77 !important;
+}
+
+/* Footer */
+.footer {
+  font-size: 0.9rem;
+  letter-spacing: 0.02em;
+}
+
+/* Responsive tweaks */
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 2rem;
+  }
+  #founder-story p {
+    font-size: 1rem;
+  }
+}
